@@ -15,11 +15,11 @@ bq_credentials = service_account.Credentials.from_service_account_file(
 
 destination_bucket_name='amber_data' #GCS bucket
 
-price_temp_file='temp/price_temp.csv'  #GCS temp file
+price_temp_file='temp/price_temp.csv'  #GCS price temp file
 
-price_data_folder='price_data/' #GCS daily usage data file
+price_data_folder='price_data/' #GCS daily price data file
 
-usage_temp_file='temp/usage_temp.csv'  #GCS temp file
+usage_temp_file='temp/usage_temp.csv'  #GCS usage temp file
 
 usage_data_folder='usage_data/' #GCS daily usage data file
 
