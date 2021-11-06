@@ -1,5 +1,5 @@
-#the package was developed by madpilot https://github.com/madpilot/amberelectric.py
-import amberelectric
+import amberelectric #the package was developed by madpilot https://github.com/madpilot/amberelectric.py
+
 from amberelectric.api import amber_api
 import datetime
 from datetime import date,timedelta,datetime
