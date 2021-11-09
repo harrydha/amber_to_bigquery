@@ -70,7 +70,7 @@ def manual_price_data_extract():
         data=pd.concat([temp,data])
     data=data[['duration', 'spot_per_kwh', 'per_kwh', 'date', 'nem_time', 'start_time',
        'end_time', 'renewables', 'channel_type', 'spike_status', 'type','range', 'estimate']]
-    data.to_csv('/Users/hha/Documents/amber/data.csv',index=False, encoding='utf-8')
+    data.to_csv('data.csv',index=False, encoding='utf-8')
 
 def usage_extract(api,sites,start_day_v, end_date_v): 
     print('Getting data for start_date=',start_day_v,' end_date=',end_date_v)
@@ -110,7 +110,7 @@ def manual_usage_data_extract():
        'end_time', 'renewables', 'channel_type', 'spike_status', 'type',
        'channelIdentifier', 'kwh', 'quality', 'cost']]
     
-    data.to_csv('/Users/hha/Documents/amber/usage_data.csv',index=False, encoding='utf-8')
+    data.to_csv('usage_data.csv',index=False, encoding='utf-8')
 
 
 def upload_to_cloud_storage(storage_client,source_df,destination_blob_name,destination_bucket_name):
